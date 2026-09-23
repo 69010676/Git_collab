@@ -11,9 +11,16 @@ int farewell(const char *name)
     return 0;
 }
 
+int checkin(const char *name) 
+{ 
+    printf("%s are checked in\n", name); 
+    return 0; 
+} 
+
 // Print a greeting message for the specified user
 int main(void) 
 { 
+    checkin("Developer A,B,C");
     greeting("Develop A,B,C !!") ;
     farewell("Developer A,B,C");
     return 0; 
